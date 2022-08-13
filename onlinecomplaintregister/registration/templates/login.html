@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>online-complaint</title>
+    <link rel="stylesheet" href="loginpagestyle.css">
+    <style>
+        .main{
+          text-align: center;
+          border: 1px solid blue;
+          border-radius: 3px;
+          width: 35%;
+          margin-left: 32%;
+          margin-top: 10%;
+          padding-bottom: 8px;
+      }
+      input{
+          margin: 10px;
+          padding: 5px;
+      }
+      button{
+          margin: 10px;
+          padding: 5px;
+          background-color: dodgerblue;
+          width: 100px;
+          color: white;
+          font-weight: bold;
+          border: 1px solid dodgerblue ;
+          border-radius: 3px;
+      }
+      h1{
+          color: blue;
+      }
+      a{
+      color:dodgerblue;
+      font-weight: bold;
+      text-decoration: none;
+      }
+      </style>
+    </head>
+
+<body>
+    <div class="main">
+        <form action="" method="post">{%csrf_token%}
+        <h1> LOGIN</h1>
+        <input type="text" name="username" id="name" placeholder="username" />
+    <br>
+        <input type="password" name="password" id="password" placeholder="password" /><br>
+        <div class="fogotpw" style="font-size: 13px; padding-right: 80px;"><a href="#"> Forgot password?</a></div><br>
+
+        <button type="submit">LOGIN</button><br>
+        
+        <div class="sign"></div>Don't have an account?&nbsp; <a href="">Signup Here</a></div>
+</form>
+</div>
+</body>
+</html>
